@@ -1,0 +1,42 @@
+{
+    "name": "vue.msal2.connect",
+    "version": "0.8.0",
+    "description": "A simple vue js wrapper for msal browser.",
+    "private": false,
+    "main": "./dist/vueMsalPlugin.common.js",
+    "scripts": {
+      "serve": "vue-cli-service serve",
+      "build": "vue-cli-service build",
+      "lint": "vue-cli-service lint",
+      "build-plugin" : "vue-cli-service build --target lib --name vueMsalPlugin ./src/lib/index.js"
+    },
+    "dependencies": {
+      "@azure/msal-browser": "^2.14.1",
+      "core-js": "^3.6.5",
+      "vue": "^2.6.11"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ninjamon23/vue.msal2.connect.git"
+    },
+    "eslintConfig": {
+      "root": true,
+      "env": {
+        "node": true
+      },
+      "extends": [
+        "plugin:vue/essential",
+        "@vue/standard"
+      ],
+      "parserOptions": {
+        "parser": "babel-eslint"
+      },
+      "rules": {}
+    },
+    "browserslist": [
+      "> 1%",
+      "last 2 versions",
+      "not dead"
+    ]
+  }
+  
